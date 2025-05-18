@@ -1,0 +1,228 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, sans-serif;
+  background: linear-gradient(135deg, #4e73df 0%, #224abe 100%);
+  color: #333;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.login-container {
+  width: 100%;
+  max-width: 380px;
+  padding: 20px;
+}
+
+.login-card {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.1);
+  padding: 30px 25px;
+  text-align: center;
+}
+
+/* Título */
+.login-title {
+  margin-bottom: 20px;
+  font-size: 1.8rem;
+  color: #224abe;
+}
+
+.login-form .form-group {
+  margin-bottom: 15px;
+  text-align: left;
+}
+
+.login-form label {
+  display: block;
+  margin-bottom: 5px;
+  font-size: 0.9rem;
+  color: #555;
+}
+
+.login-form input {
+  width: 100%;
+  padding: 10px 12px;
+  border: 1px solid #ccd1d9;
+  border-radius: 6px;
+  font-size: 1rem;
+  transition: border-color 0.2s;
+}
+
+.login-form input:focus {
+  outline: none;
+  border-color: #4e73df;
+}
+
+.btn-primary {
+  width: 100%;
+  padding: 12px;
+  background-color: #4e73df;
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 600;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.2s, transform 0.1s;
+}
+
+.btn-primary:hover {
+  background-color: #3b5bcc;
+}
+
+.btn-primary:active {
+  transform: translateY(1px);
+}
+
+.error-msg {
+  color: #e74a3b;
+  margin-top: 15px;
+  font-size: 0.9rem;
+}
+
+.register-link {
+  margin-top: 20px;
+  font-size: 0.9rem;
+}
+
+.register-link a {
+  color: #224abe;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.2s;
+}
+
+.register-link a:hover {
+  color: #3b5bcc;
+}
+
+.tasks-container {
+  max-width: 600px;
+  margin: 40px auto;
+  padding: 0 20px;
+}
+
+.tasks-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.tasks-header h1 {
+  font-size: 1.5rem;
+  color: #224abe;
+}
+
+.role-badge {
+  background: #f6c23e;
+  color: #fff;
+  padding: 4px 8px;
+  border-radius: 4px;
+  font-size: 0.9rem;
+}
+
+.btn-logout {
+  background: transparent;
+  color: #e74a3b;
+  border: 1px solid #e74a3b;
+  padding: 6px 12px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-size: 0.9rem;
+  transition: background 0.2s, color 0.2s;
+}
+
+.btn-logout:hover {
+  background: #e74a3b;
+  color: #fff;
+}
+
+.tasks-card {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+  padding: 20px;
+}
+
+.tasks-form {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.tasks-form input {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #ccd1d9;
+  border-radius: 6px;
+  font-size: 1rem;
+}
+
+.btn-add {
+  padding: 10px 16px;
+  background: #1cc88a;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s, transform 0.1s;
+}
+
+.btn-add:hover {
+  background: #17a673;
+}
+
+.btn-add:active {
+  transform: translateY(1px);
+}
+
+/* Lista de tareas */
+.tasks-list {
+  list-style: none;
+  max-height: 400px;
+  overflow-y: auto;
+  padding-right: 5px;
+}
+
+.task-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px;
+  border-bottom: 1px solid #eee;
+}
+
+.task-item.completed span {
+  text-decoration: line-through;
+  color: #888;
+}
+
+.task-actions {
+  display: flex;
+  gap: 8px;
+}
+
+.btn-action {
+  text-decoration: none;
+  font-size: 1.1rem;
+  transition: transform 0.1s;
+}
+
+.btn-action:hover {
+  transform: scale(1.2);
+}
+
+.btn-delete {
+  color: #e74a3b;
+}
+
